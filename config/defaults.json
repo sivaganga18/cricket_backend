@@ -1,0 +1,6 @@
+{
+    "otp_expire_minutes": 5,
+    "email": {
+          "expiry_minute": 5
+    }
+}

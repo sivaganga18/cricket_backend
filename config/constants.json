@@ -1,0 +1,8 @@
+{
+    "tableName": {
+        "DB_TBL_USER": "db_user",
+        "DB_TBL_TEAM": "db_team",
+        "DB_TBL_PLAYER": "db_player",
+        "DB_TBL_TEAM_PLAYER": "db_team_player"
+    }
+}

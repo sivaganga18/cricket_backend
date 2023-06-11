@@ -1,0 +1,10 @@
+{
+    "CREATED": "Created successfully",
+    "FAILED": "Failed",
+    "SUCCESS": "Success",
+    "INVAILD_PASSWORD": "Invaild Password",
+    "UNKNOWN_ERROR": "Something went wrong",
+    "USER_NAME_ALREADY_EXISTS": "Username already exists",
+    "UPDATED_SUCCESSFULLY":"Updated successfully",
+    "NOT_FOUND":"Not Found"
+}
