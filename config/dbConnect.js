@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { MongoClient } = require("mongodb");
 
 let DBURL = "";
 
@@ -14,15 +13,14 @@ if (process.env.NODE_ENV === "development") {
 }
 
 module.exports = function () {
-  // mongoose.connect(DBURL, {
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true,
-  //   // useCreateIndex: true,
-  //   // useFindAndModify: false,
-  // });
-  const client = new MongoClient(DBURL);
+  mongoose.connect(DBURL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    // useCreateIndex: true,
+    // useFindAndModify: false,
+  });
 
-  const db = client.connect();
-  // db.on("error", console.error.bind(console, "connection error:"));
-  // db.once("open", function () {});
+  const db = mongoose.connection;
+  db.on("error", console.error.bind(console, "connection error:"));
+  db.once("open", function () {});
 };
